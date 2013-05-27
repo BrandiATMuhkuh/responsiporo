@@ -1,0 +1,37 @@
+{
+	"type": "Collection",
+	"properties": {
+		"age": {
+			"name": "age",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "age",
+			"order": 0
+		},
+		"imageUrl": {
+			"name": "imageUrl",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "imageUrl",
+			"order": 1
+		},
+		"name": {
+			"name": "name",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "name",
+			"order": 2
+		},
+		"snippet": {
+			"name": "snippet",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "snippet",
+			"order": 3
+		}
+	}
+}
