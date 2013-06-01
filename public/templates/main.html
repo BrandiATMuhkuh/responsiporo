@@ -1,6 +1,18 @@
-some test
-<ul class="phones">
-  <li ng-repeat="tomato in tomatos">test
-    {{tomato.name}}
-  </li>
-</ul>
+<div class="container-fluid">
+add
+	<div class="row-fluid">
+		<div class="span6">
+			<div data-ng-repeat="tomato in tomatos">
+				<task data='test'></task>
+			</div>
+			
+		</div>
+		<div class="span6">
+			<ul class="phones">
+			  <li ng-repeat="tomato in tomatos">test
+			    {{tomato.name}}
+			  </li>
+			</ul>
+		</div>
+	</div>
+</div>

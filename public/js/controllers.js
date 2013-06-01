@@ -23,7 +23,7 @@ function TomatoListCtrl($scope, $http, Deployd) {
 	  $scope.tomatos = result;
 	  $scope.$apply(result);
 
-	  console.log(result);
+	  //console.log(result);
 	});
 
 
