@@ -9,7 +9,7 @@ add
 	            </div>
 	            <ul>
 
-	              <li ng-repeat="tomato in tomatos">
+	              <li  ng-repeat="tomato in tomatos" ng-class="{'todo-done':tomato.finished}" >
 	                <div class="todo-content">
 	                  <h4 class="todo-name">
 	                    {{tomato.title}}
