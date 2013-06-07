@@ -1,22 +1,71 @@
 <div class="container-fluid">
-add
+<div class="navbar navbar-inverse">
+    <div class="navbar-inner">
+      <div class="container">
+        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target="#nav-collapse-01"></button>
+        <div class="nav-collapse collapse" id="nav-collapse-01">
+          <ul class="nav">
+            <li>
+              <a href="#fakelink">
+                22:36
+                <span class="navbar-unread">1</span>
+              </a>
+            </li>
+            <li class="active">
+              <a href="#fakelink">
+                Messages
+                <span class="navbar-unread">1</span>
+              </a>
+              <ul>
+                <li><a href="#fakelink">Element One</a></li>
+                <li>
+                  <a href="#fakelink">Sub menu</a>
+                  <ul>
+                    <li><a href="#fakelink">Element One</a></li>
+                    <li><a href="#fakelink">Element Two</a></li>
+                    <li><a href="#fakelink">Element Three</a></li>
+                  </ul> <!-- /Sub menu -->
+                </li>
+                <li><a href="#fakelink">Element Three</a></li>
+              </ul> <!-- /Sub menu -->
+            </li>
+            <li>
+              <a href="#fakelink">
+                About Us
+              </a>
+            </li>
+          </ul>
+        </div><!--/.nav -->
+      </div>
+    </div>
+</div>
+
 	<div class="row-fluid">
 		<div class="span6">
 			
 			<div class="todo mrm">
-	            <div class="todo-search">
-	              <input class="todo-search-field" type="search" value="" placeholder="Search" />
+	            <div class="todo-headline " >
+	              	<div style="display: inline-block; ">Well, everything I guess ;-)</div>
+		            <div class="switch has-switch" style="float: right;">
+		              	<div class="switch-on switch-animate" id="myCSwitch">
+		              		<input type="checkbox" checked="" data-toggle="switch">
+		              		<span class="switch-left">ON</span>
+		              		<label>&nbsp;</label>
+		              		<span class="switch-right">OFF</span>
+		              	</div>
+		           	</div>
+
 	            </div>
 	            <ul>
 
-	              <li  ng-repeat="tomato in tomatos" ng-class="{'todo-done':tomato.finished}" >
-	                <div class="todo-content">
-	                  <h4 class="todo-name">
-	                    {{tomato.title}}
-	                  </h4>
-	                  {{tomato.address}} <span class="label label-info">Default</span>
-	                </div>
-	              </li>
+					<li  ng-repeat="tomato in tomatos" ng-class="{'todo-done':tomato.finished}" >
+						<div class="todo-content">
+							<h4 class="todo-name">
+								{{tomato.title}}
+							</h4>
+							{{tomato.address}} <span class="label">Default</span>
+						</div>
+					</li>
 
 	            </ul>
         	</div>
@@ -25,6 +74,9 @@ add
 		</div>
 		<div class="span6">
 			<div class="todo mrm">
+				<div class="todo-headline " >
+	              	<div style="display: inline-block; ">Stuff I wanna do today!</div>
+	            </div>
 	            <ul>
 
 	              <li ng-repeat="tomato in tomatos  | filter: { today: 'true' }">
@@ -33,7 +85,7 @@ add
 	                  <h4 class="todo-name">
 	                    Meet <strong>{{tomato.title}}</strong> at <strong>{{tomato.timestamp}}</strong>
 	                  </h4>
-	                  {{tomato.address}} <span class="label label-info">Default</span>
+	                  {{tomato.address}} <span class="label">Default</span><span class="label">Default</span>
 	                </div>
 	              </li>
 

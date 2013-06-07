@@ -43,6 +43,10 @@ function TomatoListCtrl($scope, $http, Deployd) {
 	});
 
 
+	//PhoneDetailCtrl.$inject = ['$scope', '$routeParams', 'Phone'];
+	//
+	//DEBUGING!!! This must be done on a other place!
+    $("[data-toggle='switch']").wrap('<div class="switch" />').parent().bootstrapSwitch();
 
 }
 
@@ -57,5 +61,3 @@ function TomatoListCtrl($scope, $http, Deployd) {
  */
 function TomatoDetailCtrl($scope, $routeParams, Deployd) {
 }
-
-//PhoneDetailCtrl.$inject = ['$scope', '$routeParams', 'Phone'];

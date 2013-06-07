@@ -2540,7 +2540,7 @@ textarea[class*="span"] {
  * http://www.apache.org/licenses/LICENSE-2.0
  * ============================================================ */
 .has-switch {
-  border-radius: 30px;
+  border-radius: 15px;
   display: inline-block;
   cursor: pointer;
   line-height: 1.231;
@@ -3865,4 +3865,26 @@ body.vjs-full-window {
 .mhl,
 .mal {
   margin-left: 20px;
+}
+
+.label,
+.badge {
+  border-radius: 4px;
+  background-color: #1abc9c;
+  color: #ffffff;
+  cursor: pointer;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  overflow: hidden;
+  padding: 3px;
+  position: relative;
+  vertical-align: middle;
+  display: inline-block;
+  *display: inline;
+  -webkit-transition: 0.14s linear;
+  -moz-transition: 0.14s linear;
+  -o-transition: 0.14s linear;
+  transition: 0.14s linear;
+  -webkit-backface-visibility: hidden;
+  text-shadow: none;
 }
