@@ -2,8 +2,18 @@
 
 /* Filters */
 
-angular.module('tomatoFilters', []).filter('checkmark', function() {
+angular.module('tomatoFilters', [])
+
+/**
+ * This filter returns an object only if today is true
+ * @return {[type]} [description]
+ */
+.filter('isToday', function() {
   return function(input) {
-    return input ? '\u2713' : '\u2718';
+  	console.log(input);
+
+  	return input;
+
   };
 });
+
