@@ -12,7 +12,7 @@ angular.module('responsiporo', ['tomatoFilters', 'tomatoServices','ui.bootstrap'
 	    restrict: 'E',
 	    scope: {},
 	    templateUrl: 'templates/task.html',
-	    controller: function ($scope, $http, $attrs) {
+	    controller: function ($scope, $attrs) {
 	    	console.log($attrs);
 	    }
 	}
