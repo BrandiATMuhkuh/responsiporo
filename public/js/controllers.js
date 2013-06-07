@@ -17,7 +17,7 @@ function TomatoListCtrl($scope, $http, Deployd) {
 	 * @param  {Object} err
 	 * @return {Object}
 	 */
-	dpd.phones.get(function (result, err) {
+	dpd.tomatos.get(function (result, err) {
 	  if(err) return console.log(err);
 
 	  $scope.tomatos = result;
@@ -32,7 +32,7 @@ function TomatoListCtrl($scope, $http, Deployd) {
 	 * @param  {Object} results
 	 * @return {Object}
 	 */
-	dpd.phones.on('create', function(results){
+	dpd.tomatos.on('create', function(results){
 		console.log(results);
 		if($scope.tomatos)
 			$scope.tomatos.push(results);
@@ -41,6 +41,7 @@ function TomatoListCtrl($scope, $http, Deployd) {
 
 		$scope.$apply(results);
 	});
+
 
 
 }

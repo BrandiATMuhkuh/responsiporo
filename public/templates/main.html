@@ -2,17 +2,43 @@
 add
 	<div class="row-fluid">
 		<div class="span6">
-			<div data-ng-repeat="tomato in tomatos">
-				<task data='test'></task>
-			</div>
 			
+			<div class="todo mrm">
+	            <div class="todo-search">
+	              <input class="todo-search-field" type="search" value="" placeholder="Search" />
+	            </div>
+	            <ul>
+
+	              <li ng-repeat="tomato in tomatos">
+	                <div class="todo-content">
+	                  <h4 class="todo-name">
+	                    {{tomato.title}}
+	                  </h4>
+	                  {{tomato.address}} <span class="label label-info">Default</span>
+	                </div>
+	              </li>
+
+	            </ul>
+        	</div>
+
+
 		</div>
 		<div class="span6">
-			<ul class="phones">
-			  <li ng-repeat="tomato in tomatos">test
-			    {{tomato.name}}
-			  </li>
-			</ul>
+			<div class="todo mrm">
+	            <ul>
+
+	              <li ng-repeat="tomato in tomatos">
+	                <div class="todo-icon fui-user"></div>
+	                <div class="todo-content">
+	                  <h4 class="todo-name">
+	                    Meet <strong>{{tomato.title}}</strong> at <strong>{{tomato.timestamp}}</strong>
+	                  </h4>
+	                  {{tomato.address}} <span class="label label-info">Default</span>
+	                </div>
+	              </li>
+
+	            </ul>
+        	</div>
 		</div>
 	</div>
 </div>

@@ -1,0 +1,1 @@
+emit('tomatos:create', this);
